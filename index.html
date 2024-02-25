@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soundboard</title>
+</head>
+<body>
+    <h1>Soundboard</h1>
+
+<div class="buttons">
+
+   
+
+    <div class="btnStyle" onclick="btnSound('pingu')">-Pingu-
+    <audio id="pingu" src="pingu.mp3"></audio>
+    </div>
+
+<div class="btnStyle" onclick="btnSound('batman')">-Batman-
+    <audio id="batman" src="batman.mp3"></audio>
+</div>
+
+<div class="btnStyle" onclick="btnSound('magic')">-Magic-
+    <audio id="magic" src="fairy.mp3"></audio>
+</div>
+
+<div class="btnStyle" onclick="btnSound('pew')">-Pew-
+    <audio id="pew" src="pew.mp3"></audio>
+</div>
+</div>
+
+<style>
+    body {
+        background-color: aqua;
+    }
+    .btnStyle {
+        border: solid 2px rgb(143, 94, 30);
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        margin: 20px;
+        text-align:center;
+        line-height: 100px;
+        margin-top: 50px;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bolder;
+        background-color: rgb(244, 158, 59);
+        cursor: pointer;
+        
+    }
+    .buttons {
+        display: flex;
+        justify-content: center;
+    }
+    h1 {
+        display: flex;
+        justify-content: center;
+        color: rgb(0, 0, 0);
+    }
+</style>
+
+<script>
+
+function btnSound (chosenSound){
+document.getElementById(chosenSound).play();
+}
+
+
+</script>
+
+</body>
